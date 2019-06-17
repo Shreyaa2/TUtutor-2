@@ -1,0 +1,106 @@
+<!--Justine Caylor, Shreayaa Raghuram, Yi-Shan Shir   COSC 617  Project -->
+<!--TUTutor Home Page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="tututor.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./Homepage.js"></script>
+    <title>TUTutor - Home Page!</title>
+
+    <div id="welcome"> <img src="./Images/banner.png" alt="Welcome to TUTutor">
+        <nav class="topnav">
+            <ul>
+                <li><a href="tututor_mainpage.html"> Main Page</a> </li>
+                <li><a href="https://towson.edu">Towson University</a></li>
+                <li> <a href="about.html">About</a> </li>
+            </ul>
+        </nav>
+    </div>
+</head>
+<Style>
+
+</Style>
+
+<body>
+    <!-- <h1>Welcome back, Tiger!</h1> 
+
+    <div id="welcome">
+        <div id="greeting"> </div>
+    </div> -->
+
+
+    <div id="mainpageimg" class="container">
+
+        <img src="./Images/mainpage.jpg" alt="TUtutoring" width="100%;" height="30%;">
+
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="searchbar">
+            <input class="searchIn" type="text" placeholder=" Search here " onkeyup="filterResults()">
+            <button onclick="searchListing()" type="button" class=" btn btn-outline-dark"><img type="image/svg+xml" src="./Images/search.svg" width="36px;" height="36px;"></button>
+            <div id="searchDropList" class="dropdown-content">
+                <a href="cosc236board.html">COSC236</a>
+                <a href="cosc237board.html">COSC237</a>
+                <a href="cosc600board.html">COSC600</a>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="feed">
+                <h4> Courses</h4>
+                <p> Love. Really likes hummus lick arm hair so jump off balcony, onto stranger's head warm up laptop with butt lick butt fart rainbows until owner yells pee in litter box hiss at cats head nudges yet instead of drinking water from the cat
+                    bowl, make sure to steal water from the toilet for cats woo. Making sure that fluff gets into the owner's eyes if it fits i sits yet make it to the carpet before i vomit mmmmmm or swat at dog, yet cat fur is the new black annoy the
+                    old grumpy cat, start a fight and then retreat.
+                </p>
+            </div>
+
+            <div class="feed">
+                <h4> Tutors </h4>
+                <p> Meow lick masters hand at first then bite because im moody. Roll over and sun my belly attack feet rub butt on table. You are a captive audience while sitting on the toilet, pet me ask to go outside and ask to come inside and ask to go
+                    outside and ask to come inside hate dog, or sleep everywhere, but not in my bed so really likes hummus. Slap kitten brother with paw. Sleep on my humans head this human feeds me, i should be a god. Eat owners food relentlessly pursues
+                    moth as lick i the shoes. </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function searchListing() {
+            document.getElementById("searchDropList").classList.toggle("show");
+        }
+    </script>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+
+    <!-- Load React component. -->
+    <!-- <script src="greeting.js"></script> -->
+</body>
+<footer>
+    <nav class="nav2">
+        <ul>
+            <li> <a href="contactus.html">Contact</a> </li>
+            <li> <a href="faq.html">   FAQ   </a> </li>
+            <li>
+                <a href="https://twitter.com/TUTutorWebsite" class="fa"><img type="image/svg+xml" src="./Images/twitter.svg" width="30px;" height="30px;"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/tututorwebsite/" class="fa"><img type="image/svg+xml" src="./Images/instagram.svg" width="30px;" height="30px;"></a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+</html

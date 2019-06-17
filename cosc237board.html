@@ -1,0 +1,67 @@
+<!--Justine Caylor, Shreayaa Raghuram, Yi-Shan Shir   COSC 617  Project -->
+<!--TUTutor COSC237 Message Board-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		COSC237 Board - TUTutor
+	</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="tututor.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<h1>COSC237 Message Board</h1>
+    <h2>Introduction to Computer Science II</h2>
+	<p>Tutor and Pupil posts to be added</p>
+	
+<div id="o">
+<form id="output" onsubmit="return display()" action="/board/237" method="POST">
+<table >
+<tbody>
+
+</tbody>
+</table>
+<button type="submit" id='button' >CLICK FOR TUTOR INFO</button>
+</form> 
+		
+	</div>
+
+
+
+<script>
+		function display () {
+			
+		$(document).ready(function(){
+			const Url='/board/237';
+			var data = 'COSC237'
+			 $("button").submit(function(){	
+				$('.output').dataTable( {
+					  serverSide: true,
+					ajax: {
+						url: Url,
+						type: "POST",
+					}, 
+					columns: [
+					{ "data": "tfname" },
+					{ "data": "tlname" },
+					{ "data": "temail" }
+					]
+						});
+							});
+						})
+					}
+			
+			
+			</script>
+	
+	
+	</script> -->
+
+<footer>
+    <a href="homepage.html">Return to TUTutor Homepage</a>
+    <a href="https://twitter.com/TUTutorWebsite" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/tututorwebsite/" class="fa fa-instagram"></a>
+	</footer>
+</body>
+</html>

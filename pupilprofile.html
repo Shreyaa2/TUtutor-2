@@ -1,0 +1,56 @@
+<!--Justine Caylor, Shreayaa Raghuram, Yi-Shan Shir   COSC 617  Project -->
+<!--TUTutor Create Pupil Page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		Create Pupil - Tututor
+	</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="tututor.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="tututor.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body style="text-align:center;">
+	<h1>Create Pupil Account</h1>
+	<form class='pupil-form' name="pupilform" id="pupilform" onsubmit="return submit(this.form)" action="/pupilpro" method="POST">
+		<fieldset id="adduser">
+		<h2>Please complete the following fields:</h2>
+		First name:<input type="text"  id="pupilFirst" name="pupilFirst" required><br><br>
+		Last name: <input type="text"  id="pupilLast" name="pupilLast" required><br><br>
+		Email: <input type="email"  id="pupilEmail" name="pupilemail" required><br><br>
+		Password: <input type="text"  id="pupilpassword" name="pupilpassword" required><br><br>
+		Verify Password: <input type="text"  id="verifypupilpassword" name="verifypupilpassword" required><br><br>
+		Major/Minor: <input type="text"  id="pupilMajor" name="pupilMajor" required><br><br>
+		Academic Program Level: <select id="academicYear" name="academicYear" >
+			<option value="">Academic Program</option>
+			<option value="Undergraduate">Undergraduate</option>
+			<option value="Graduate">Graduate</option>
+		</select>
+ <button type="submit" id="sub" onclick="return validatePupil()"> Create profile </button>
+</fieldset>
+<pre><code id="output"> </code></pre>
+	</form>
+	<!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <!--script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin --><!--/script -->
+        <!--script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin --><!-- /script -->
+    
+        <!-- Load our React component. -->
+	<!--script src="greeting.js" --><!-- /script -->
+	<!-- script -->
+	<!--	ReactDOM.render(<LikeButton pname={pupilFirst}/>, document.getElementById('root')); -->
+	<!-- /script -->
+    
+	
+	<footer>
+		<a href="tututor_mainpage.html">Return to TUTutor Main Page</a>
+		<a href="contactus.html">Contact Us</a>
+		<a href="https://www.towson.edu/">Visit Towson University Website</a>
+		<a href="https://twitter.com/TUTutorWebsite" class="fa fa-twitter"></a>
+		<a href="https://www.instagram.com/tututorwebsite/" class="fa fa-instagram"></a>
+	</footer>
+	
+</body>
+</html>

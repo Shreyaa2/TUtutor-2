@@ -1,0 +1,104 @@
+<!--Justine Caylor, Shreayaa Raghuram, Yi-Shan Shir   COSC 617  Project -->
+<!--TUTutor About Page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		About TUTutor
+	</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="tututor.css">
+	<script src="tututor.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+/*ABOUT US STYLES */
+	
+#aboutus_part1, #aboutus_part2{
+text-align:center;
+	}
+.part1text{
+	font-size:20px;
+	font-weight:bold;
+	}
+	
+.tuTweets {
+    display: none;
+    vertical-align:center;
+}
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  border: 5px solid #000000;
+}
+
+</style>
+	
+</head>
+<body>
+	<div id="aboutus_part1">
+	<h1>The Idea Behind TUTutor</h1>
+	<p class="part1text">After years of college, it has been observed that there is a LACKING of available tutors on campus. The department tutors<br>
+		were becoming overwhelmed at the traffic of students needing help, and not being able to help everyone. Students have<br>
+		become forced to search for outside help, but that can be time consuming, costly, and at times, unsafe.</p>
+	
+	<p class="part1text"> Posts of tutoring concerns have been expressed online (see below): </p>
+	</div>
+	<div class="slideshow-container">
+
+		<div class="tuTweets">
+ 			 <img src="./Images/tweet1.png" style="width:100%">
+		</div>
+
+		<div class="tuTweets">
+			 <img src="./Images/tweet2.png" style="width:100%">
+		</div>
+
+		<div class="tuTweets">
+  			<img src="./Images/tweet3.png" style="width:100%">
+		</div>
+		
+		<div class="tuTweets">
+  			<img src="./Images/tweet4.png" style="width:100%">
+		</div>
+
+	</div>
+		
+	<div id="aboutus_part2">
+		<p class="part1text">Something needed to change...<span style="color:red;">so that is what we did!</span></p>
+	
+		<p class="part1text"> Introducing TUTutor! The convenient and safe platform for tutors and pupils to connect <br>
+		so that the tutors can teach others in courses they excel in, and pupils can get the help that they deserve! <br>
+		This platform is openly only for verified Towson University students and faculty, which ensures that trusted <br>
+		connections are being made. This website is growing and becoming better each day, and we hope you enjoy it! <br><br> -TUTutor Admin</p>
+	
+<br>
+	</div>
+	
+	<script>
+var tweetIndex = 0;
+showTweets();
+function showTweets() {
+    var i;
+    var tweets = document.getElementsByClassName("tuTweets");
+    for (i = 0; i < tweets.length; i++) {
+       tweets[i].style.display = "none";  
+    }
+    tweetIndex++;
+    if (tweetIndex > tweets.length) {tweetIndex = 1}    
+    tweets[tweetIndex-1].style.display = "block";  
+    setTimeout(showTweets, 3000); 
+}
+	</script>
+
+
+<footer>
+   	 <a href="homepage.html">Return to TUTutor Homepage</a>
+	<a href="contactus.html">Contact Us</a>
+	<a href="https://www.towson.edu/">Visit Towson University Website</a>
+	<a href="https://twitter.com/TUTutorWebsite" class="fa fa-twitter"></a>
+	<a href="https://www.instagram.com/tututorwebsite/" class="fa fa-instagram"></a>
+	</footer>
+</body>
+</html>
