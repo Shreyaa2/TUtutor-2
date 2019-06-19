@@ -1,6 +1,3 @@
-/* Justine Caylor, Shreayaa Raghuram, Yi-Shan Shir   COSC 617  Project*/
-
-
 /*TUTutor Main Page Style Formatting*/
 
 header {
@@ -8,7 +5,6 @@ header {
     color: white;
     text-align: center;
     padding: 15px;
-    overflow: hidden;
 }
 
 h1 {
@@ -21,34 +17,28 @@ h1 {
 }
 
 #getforms {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 8%;
-    margin: 3%;
-}
-
-#getforms::after {
-    content: "";
-    display: table;
-    clear: both;
+    padding: 10px 10px 10px 150px;
+    margin: 4%;
 }
 
 .card {
     float: left;
     padding: 40px;
-    margin: 0 5% 5% 5%;
-    height: 70%;
+    margin: 5% 5% 5%;
+    height: 80%;
     color: black;
     border: solid;
     border-width: 1px;
     border-radius: 5px;
     align-content: center;
-    text-overflow: ellipsis;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card #profile {
-    width: 400px;
+.mainpagebtn {
+    width: 200px;
+    height: 220px;
+    border: 5px solid black;
+    /*  background: #ffb30a; */
 }
 
 
@@ -74,29 +64,10 @@ h1 {
     border: 5px solid #FFF821;
 } */
 
-.mainpagebtn {
-    float: left;
-    width: 200px;
-    height: 200px;
-    border: 5px solid black;
-    /*  background: #ffb30a; */
-}
-
-.mainpagebtn2 {
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    border: 5px solid black;
-    background-color: #ffb30a;
-}
-
 
 /*SOCIAL MEDIA LINK FORMATTING */
 
 .fa {
-    /*  padding: 10px;
-    font-size: 10px;
-    text-align: center; */
     margin: -3px 3px;
     border-radius: 50%;
     float: right;
@@ -201,12 +172,6 @@ fieldset {
     opacity: 0.8;
 }
 
-.container {
-    max-height: 50%;
-    background-color: #ffb10a9a;
-    align-self: center;
-}
-
 
 /*
 #welcome2{
@@ -214,9 +179,9 @@ fieldset {
 } */
 
 .topnav {
-    overflow: hidden;
     background-color: #ffb30a;
     height: 40%;
+    overflow: hidden;
 }
 
 .topnav ul {
