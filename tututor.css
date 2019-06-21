@@ -17,14 +17,14 @@ h1 {
 }
 
 #getforms {
-    padding: 10px 10px 10px 150px;
-    margin: 4%;
+    padding: 10px 10px 0 150px;
+    margin: 2.5%;
 }
 
 .card {
     float: left;
     padding: 40px;
-    margin: 5% 5% 5%;
+    margin-left: 7%;
     height: 80%;
     color: black;
     border: solid;
@@ -39,6 +39,16 @@ h1 {
     height: 220px;
     border: 5px solid black;
     /*  background: #ffb30a; */
+}
+
+.signin {
+    margin: 10px 10px 10px 370px;
+    width: 200px;
+    height: 120px;
+}
+
+.signin h4 {
+    margin: 0%;
 }
 
 
