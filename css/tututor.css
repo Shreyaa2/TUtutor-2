@@ -91,10 +91,12 @@ h1 {
 }
 
 .userform {
-    margin: 13px;
+    margin: 40px;
     padding: 10px;
     width: 300px;
     height: 280px;
+    position: relative;
+    left: 415px;
 }
 
 
@@ -305,6 +307,7 @@ fieldset {
     position: center;
     display: block;
     overflow: hidden;
+    margin: 40px;
 }
 
 .searchbar .searhbtn button {
@@ -335,15 +338,11 @@ fieldset {
     display: block;
 }
 
-.container-fluid {
-    max-width: 1000px;
-}
-
 .feed {
     float: left;
     width: 40%;
-    padding: 10px;
-    margin: 5% 5% 10% 5%;
+    padding: 20px;
+    margin: 5% 5% 5% 5%;
     height: 70%;
     background-color: white;
     border: solid;
@@ -354,7 +353,7 @@ fieldset {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.row {
+#feedrow {
     background-color: #ffb30a;
     margin: 0 5% 0 5%;
     height: auto;
